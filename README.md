@@ -25,6 +25,25 @@ This repository is an accessibility knowledge base for iOS UI development:
 3. Apply the rule + implementation + testing sections in your code change.
 4. Keep citations aligned to Tier-1 Apple sources from `docs/core/sources/registry.md`.
 
+## Install As a Skill
+
+Install this repository as a Codex skill:
+
+```bash
+npx skills add https://github.com/josephmccraw/SwiftAccessibilityAgent --skill SwiftAccessibilityAgent
+```
+
+After install, load the skill in your agent workflow and follow `SKILL.md`.
+
+## Publish Readiness Checklist (skills.sh)
+
+Before sharing broadly:
+
+1. Ensure `SKILL.md` is present at repo root and up to date.
+2. Ensure `README.md` includes install command and usage guidance.
+3. Keep `docs/changelog.md` current for visible iteration history.
+4. Verify track backlogs and linked guideline files are consistent.
+
 ## Project Status
 
 - Workstreams `A` through `G` in `Tasks.txt` are complete.

@@ -40,3 +40,4 @@ All notable changes to this documentation project are tracked here.
 - Added `acceptance_status` and `review_evidence` tracking columns to SwiftUI and UIKit topic backlogs using tier-based positive evidence language, and marked topics as `Tier-Validated`.
 - Promoted all SwiftUI and UIKit guidelines to `Status: Accepted` and aligned backlog `status`/`acceptance_status` entries to `Accepted`.
 - Updated top-level and track README files to reflect accepted guideline baseline and tier-based backlog evidence fields.
+- Added skills.sh install command and publish-readiness checklist to `README.md`.
