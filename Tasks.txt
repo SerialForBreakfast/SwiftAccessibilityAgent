@@ -164,7 +164,7 @@ D) Gather "Best Practices" With Citations and Minimal Quoting
 --------------------------------------------------------------
 Owner: `@agent`
 Priority: `P0`
-Status: `Not Started`
+Status: `In Progress`
 Target Date: `2026-03-20`
 Output: `docs/swiftui/guidelines/*.md`
 

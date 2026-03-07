@@ -6,18 +6,18 @@ Last updated: 2026-03-07
 
 | topic_id | topic | priority | status | tier1_citation | tier2_citation | guideline_file |
 |---|---|---|---|---|---|---|
-| U-001 | Labels and meaningful names | P0 | Not Started | No | No | TBD |
-| U-002 | Hints: when to use vs omit | P0 | Not Started | No | No | TBD |
-| U-003 | Values for stateful controls/readouts | P0 | Not Started | No | No | TBD |
-| U-004 | Traits and roles | P0 | Not Started | No | No | TBD |
-| U-005 | Grouping and containment | P0 | Not Started | No | No | TBD |
-| U-006 | Focus and reading order | P0 | Not Started | No | No | TBD |
-| U-007 | Accessibility custom actions | P1 | Not Started | No | No | TBD |
-| U-008 | Custom controls and semantic equivalence | P1 | Not Started | No | No | TBD |
-| U-009 | Rotor-friendly structure | P1 | Not Started | No | No | TBD |
-| U-010 | Dynamic Type and layout resilience | P0 | Not Started | No | No | TBD |
-| U-011 | Color/contrast and non-color cues | P0 | Not Started | No | No | TBD |
-| U-012 | Reduced Motion handling | P1 | Not Started | No | No | TBD |
-| U-013 | Modal focus containment | P1 | Not Started | No | No | TBD |
-| U-014 | Table/collection/form control semantics | P1 | Not Started | No | No | TBD |
-| U-015 | Media captions/descriptions/control semantics | P2 | Not Started | No | No | TBD |
+| U-001 | Labels and meaningful names | P0 | Drafted | Yes | No | docs/uikit/guidelines/u-001-labels-meaningful-names.md |
+| U-002 | Hints: when to use vs omit | P0 | Drafted | Yes | No | docs/uikit/guidelines/u-002-hints-when-to-use.md |
+| U-003 | Values for stateful controls/readouts | P0 | Drafted | Yes | No | docs/uikit/guidelines/u-003-values-stateful-controls.md |
+| U-004 | Traits and roles | P0 | Drafted | Yes | No | docs/uikit/guidelines/u-004-traits-roles.md |
+| U-005 | Grouping and containment | P0 | Drafted | Yes | No | docs/uikit/guidelines/u-005-grouping-containment.md |
+| U-006 | Focus and reading order | P0 | Drafted | Yes | No | docs/uikit/guidelines/u-006-focus-reading-order.md |
+| U-007 | Accessibility custom actions | P1 | Drafted | Yes | No | docs/uikit/guidelines/u-007-accessibility-custom-actions.md |
+| U-008 | Custom controls and semantic equivalence | P1 | Drafted | Yes | No | docs/uikit/guidelines/u-008-custom-controls-semantic-equivalence.md |
+| U-009 | Rotor-friendly structure | P1 | Drafted | Yes | No | docs/uikit/guidelines/u-009-rotor-friendly-structure.md |
+| U-010 | Dynamic Type and layout resilience | P0 | Drafted | Yes | No | docs/uikit/guidelines/u-010-dynamic-type-layout-resilience.md |
+| U-011 | Color/contrast and non-color cues | P0 | Drafted | Yes | No | docs/uikit/guidelines/u-011-color-contrast-non-color-cues.md |
+| U-012 | Reduced Motion handling | P1 | Drafted | Yes | No | docs/uikit/guidelines/u-012-reduced-motion.md |
+| U-013 | Modal focus containment | P1 | Drafted | Yes | No | docs/uikit/guidelines/u-013-modal-focus-containment.md |
+| U-014 | Table/collection/form control semantics | P1 | Drafted | Yes | No | docs/uikit/guidelines/u-014-table-collection-form-semantics.md |
+| U-015 | Media captions/descriptions/control semantics | P2 | Drafted | Yes | No | docs/uikit/guidelines/u-015-media-captions-descriptions-controls.md |
