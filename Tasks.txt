@@ -68,26 +68,26 @@ A) Build a "Sources of Truth" Registry
 --------------------------------------
 Owner: `@agent`
 Priority: `P0`
-Status: `In Progress`
+Status: `Done`
 Target Date: `2026-03-10`
 Output: `docs/core/sources/registry.md`
 
-[ ] Research: confirm Tier-1 canonical source URLs and title accuracy.
-[ ] Write: define registry format (source ID, title, URL, authority tier, last-reviewed date, notes).
-[ ] Write: seed Tier-1 sources:
+[x] Research: confirm Tier-1 canonical source URLs and title accuracy.
+[x] Write: define registry format (source ID, title, URL, authority tier, last-reviewed date, notes).
+[x] Write: seed Tier-1 sources:
     - Apple SwiftUI accessibility docs (View-Accessibility, Creating Accessible Views, Accessible Descriptions, Traits, Actions, Rotors, sort priority).
     - Apple Human Interface Guidelines (Accessibility + VoiceOver).
     - Apple Accessibility documentation hub + Accessibility Inspector.
     - WWDC sessions on SwiftUI accessibility.
     - App Store Connect Accessibility Nutrition Labels criteria (VoiceOver, Sufficient Contrast, Larger Text, Reduced Motion, etc.).
-[ ] Write: seed Tier-2 sources (high-quality, widely trusted):
+[x] Write: seed Tier-2 sources (high-quality, widely trusted):
     - SwiftLee (Antoine van der Lee) accessibility articles.
     - Hacking with Swift (SwiftUI accessibility chapters).
     - Swift with Majid (accessibilityRepresentation, rotors, general SwiftUI a11y).
     - Use Your Loaf (SwiftUI accessibility updates / modifier changes).
     - CVS Health: iOS SwiftUI Accessibility Techniques (open-source techniques + examples).
-[ ] Write: seed Tier-3 sources (reference only / caution): conference slide decks, vendor blogs, community posts.
-[ ] Verify: dead-link scan and duplicate source ID scan.
+[x] Write: seed Tier-3 sources (reference only / caution): conference slide decks, vendor blogs, community posts.
+[x] Verify: dead-link scan and duplicate source ID scan (static URL-hygiene + duplicate-ID scan).
 
 DoD (Workstream A)
 - Registry has tiering policy and freshness policy.
@@ -102,12 +102,12 @@ B) Define the Accessibility "Technology Map"
 --------------------------------------------
 Owner: `@agent`
 Priority: `P0`
-Status: `In Progress`
+Status: `Done`
 Target Date: `2026-03-11`
 Output: `docs/core/technology-map.md`
 
-[ ] Research: confirm technology list relevance for iOS-first scope.
-[ ] Write: enumerate assistive technologies and key user interactions that impact app semantics:
+[x] Research: confirm technology list relevance for iOS-first scope.
+[x] Write: enumerate assistive technologies and key user interactions that impact app semantics:
     - VoiceOver (focus + rotor navigation)
     - Switch Control (scanning and activation)
     - Voice Control (command-driven interaction)
@@ -115,11 +115,11 @@ Output: `docs/core/technology-map.md`
     - Increase Contrast / Differentiate Without Color
     - Reduce Motion
     - Captions / Audio Descriptions (for media-centric UIs)
-[ ] Write: for each technology define:
+[x] Write: for each technology define:
     - What the user does (interaction model)
     - What the UI needs to expose (label/value/hint/traits/actions, reading order, focus behavior)
     - What we can test (Inspector checks + manual flows)
-[ ] Verify: each technology includes at least one actionable test statement.
+[x] Verify: each technology includes at least one actionable test statement.
 
 DoD (Workstream B)
 - Map covers all listed technologies.
@@ -130,21 +130,21 @@ C) Build a Shared "Semantics Checklist" Taxonomy
 ------------------------------------------------
 Owner: `@agent`
 Priority: `P0`
-Status: `In Progress`
+Status: `Done`
 Target Date: `2026-03-12`
 Outputs:
 - `docs/core/taxonomy/semantics-checklist.md`
 - `docs/core/templates/guideline-template.md`
 - `docs/swiftui/guidelines/topic-backlog.md`
 
-[ ] Research: validate canonical semantics fields and API mapping.
-[ ] Write: define canonical semantic fields:
+[x] Research: validate canonical semantics fields and API mapping.
+[x] Write: define canonical semantic fields:
     - Label, Value, Hint, Traits/Role, Actions
-[ ] Write: map each field to:
+[x] Write: map each field to:
     - SwiftUI APIs/modifiers
     - UIKit equivalents (for interop)
     - Common failure modes (icons without labels, wrong grouping, duplicate labels, misleading hints, etc.)
-[ ] Write: finalize guideline template sections:
+[x] Write: finalize guideline template sections:
     - Title
     - Problem statement
     - Rule
@@ -152,8 +152,8 @@ Outputs:
     - How to implement (SwiftUI-first, UIKit interop notes)
     - How to test
     - Citations
-[ ] Write: maintain prioritized topic backlog with status and citation readiness fields.
-[ ] Verify: taxonomy and template are internally consistent and reusable for all topics.
+[x] Write: maintain prioritized topic backlog with status and citation readiness fields.
+[x] Verify: taxonomy and template are internally consistent and reusable for all topics.
 
 DoD (Workstream C)
 - Taxonomy includes semantics + grouping + focus coverage.
@@ -164,14 +164,14 @@ D) Gather "Best Practices" With Citations and Minimal Quoting
 --------------------------------------------------------------
 Owner: `@agent`
 Priority: `P0`
-Status: `In Progress`
+Status: `Done`
 Target Date: `2026-03-20`
 Output: `docs/swiftui/guidelines/*.md`
 
-[ ] Research: for each topic, collect >=2 citations (>=1 Tier-1 Apple).
-[ ] Write: include 1-2 short compliant quotes only when clarity improves.
-[ ] Write: add a do/don't example list (pseudocode is fine; avoid large code dumps).
-[ ] Verify: each topic file passes Citation Quality Rules and includes explicit test steps.
+[x] Research: for each topic, collect >=2 citations (>=1 Tier-1 Apple).
+[x] Write: include 1-2 short compliant quotes only when clarity improves.
+[x] Write: add a do/don't example list (pseudocode is fine; avoid large code dumps).
+[x] Verify: each topic file passes Citation Quality Rules and includes explicit test steps.
 
 Topic List
 - Labels and meaningful names (especially for images/icons)
@@ -199,7 +199,7 @@ E) Verification Plan (Make Guidelines Enforceable)
 --------------------------------------------------
 Owner: `@agent`
 Priority: `P0`
-Status: `In Progress`
+Status: `Done`
 Target Date: `2026-03-22`
 Outputs:
 - `docs/testing/manual-test-scripts.md`
@@ -216,7 +216,7 @@ Outputs:
     - Accessibility Inspector audit checklist (issues to look for)
 [x] Write: automation hooks (where feasible):
     - XCUITest expectations for accessibility identifiers/labels/order (limited but useful)
-[ ] Verify: test scripts are executable by another reviewer without additional context.
+[x] Verify: test scripts are executable by another reviewer without additional context.
 
 DoD (Workstream E)
 - All three testing artifacts exist.
@@ -227,7 +227,7 @@ F) Agent Skill Packaging
 ------------------------
 Owner: `@agent`
 Priority: `P1`
-Status: `In Progress`
+Status: `Done`
 Target Date: `2026-03-24`
 Outputs:
 - `SKILL.md`
@@ -242,7 +242,7 @@ Outputs:
     - When modifying UI, always preserve/verify accessibility semantics
     - Require citations for any new guideline added
     - Require a verification step per change
-[ ] Verify: skill content references source registry and testing artifacts.
+[x] Verify: skill content references source registry and testing artifacts.
 
 DoD (Workstream F)
 - `SKILL.md` is self-sufficient and points to canonical docs.
@@ -253,7 +253,7 @@ G) Maintenance + Freshness
 --------------------------
 Owner: `@agent`
 Priority: `P1`
-Status: `In Progress`
+Status: `Done`
 Target Date: `2026-03-25`
 Outputs:
 - `docs/changelog.md`
@@ -264,7 +264,7 @@ Outputs:
     - WWDC: review annually
     - Community sources: review annually and downgrade if stale
 [x] Write: changelog section for guideline updates.
-[ ] Verify: stale-source downgrade rules are documented and actionable.
+[x] Verify: stale-source downgrade rules are documented and actionable.
 
 DoD (Workstream G)
 - Freshness intervals explicitly documented.

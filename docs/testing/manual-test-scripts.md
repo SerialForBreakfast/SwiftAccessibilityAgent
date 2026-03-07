@@ -3,6 +3,15 @@
 Last updated: 2026-03-07
 Scope: iOS app screens implemented with SwiftUI, UIKit, or mixed stacks.
 
+## Reviewer Preconditions
+
+Run these checks with no additional project context by using this baseline:
+
+1. Build available app target and launch to a deterministic start state.
+2. Use one named device profile (for example, iPhone 15) and record OS version.
+3. Verify accessibility settings toggles can be changed during the session.
+4. Test at least one representative flow for each guideline area touched by the change.
+
 ## Script 1: VoiceOver Smoke Test (Per Screen)
 
 Purpose: verify semantic announcements and focus flow for core user tasks.
@@ -87,3 +96,9 @@ Use this for each executed script:
 - Result: Pass/Fail
 - Notes:
 - Follow-up issue link:
+
+## Minimum Evidence Required For PR/Review
+
+- At least one completed log entry per executed script type.
+- Explicit fail records for any blocking defect with issue links.
+- Date + build/version + device/OS included for reproducibility.

@@ -68,3 +68,23 @@ Each source entry must include:
 - Apple docs: review quarterly and at each major iOS release.
 - WWDC sources: review annually after WWDC season.
 - Community sources: review annually and downgrade if stale.
+
+## Stale-Source Downgrade Rules (Actionable)
+
+Apply these rules during freshness review:
+
+1. Trigger conditions:
+   - `last_reviewed` exceeds freshness interval for source tier/type.
+   - Link is dead, redirected to unrelated content, or materially changed.
+   - Guidance conflicts with current Tier-1 Apple documentation.
+2. Required actions:
+   - Mark source notes with stale/conflict reason and review date.
+   - Remove source from new guideline citations until revalidated.
+   - If source is Tier-2 and remains stale after one review cycle, downgrade to Tier-3.
+   - If source is irrecoverably outdated or unavailable, remove from registry.
+3. Guideline impact handling:
+   - For each guideline citing a downgraded/removed source, open a follow-up to replace citation.
+   - Do not keep a guideline in `Accepted` status if its required Tier-1 citation is invalid.
+4. Completion criteria:
+   - Registry entry updated (`last_reviewed`, notes, tier if changed).
+   - Affected guideline files updated or follow-up issues recorded.

@@ -10,7 +10,10 @@ Use this skill to enforce source-driven accessibility guidance for SwiftUI and U
 - Guideline template: `docs/core/templates/guideline-template.md`
 - SwiftUI guidelines: `docs/swiftui/guidelines/`
 - UIKit backlog: `docs/uikit/guidelines/topic-backlog.md`
-- Testing artifacts: `docs/testing/`
+- Testing artifacts:
+  - `docs/testing/manual-test-scripts.md`
+  - `docs/testing/inspector-audit-checklist.md`
+  - `docs/testing/xcuitest-hooks.md`
 
 ## Agent Rules
 

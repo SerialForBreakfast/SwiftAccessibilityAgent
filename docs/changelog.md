@@ -32,3 +32,8 @@ All notable changes to this documentation project are tracked here.
 
 - Corrected SwiftUI backlog guideline paths and core reference links in `docs/swiftui/guidelines/topic-backlog.md`.
 - Updated UIKit backlog statuses and file links for drafted P0 topics in `docs/uikit/guidelines/topic-backlog.md`.
+- Completed structured guideline QA pass across SwiftUI and UIKit sets (sections, metadata, citation counts, and source-ID integrity).
+- Strengthened reviewer execution readiness in `docs/testing/manual-test-scripts.md` with preconditions and minimum PR evidence requirements.
+- Expanded `SKILL.md` canonical inputs to reference explicit testing artifact files.
+- Added actionable stale-source downgrade workflow to `docs/core/sources/registry.md`.
+- Marked core workstreams A/B/C as complete in `Tasks.txt` after artifact and consistency verification scans.
