@@ -30,7 +30,7 @@ This repository is an accessibility knowledge base for iOS UI development:
 Install this repository as a Codex skill:
 
 ```bash
-npx skills add https://github.com/josephmccraw/SwiftAccessibilityAgent --skill SwiftAccessibilityAgent
+npx skills add https://github.com/SerialForBreakfast/SwiftAccessibilityAgent --skill swift-accessibility-agent
 ```
 
 After install, load the skill in your agent workflow and follow `SKILL.md`.

@@ -1,3 +1,8 @@
+---
+name: swift-accessibility-agent
+description: Use this skill when creating, reviewing, or updating SwiftUI/UIKit UI to apply Tier-1 Apple-backed accessibility guidance, choose the right guideline topic, preserve semantics (label/value/hint/role/actions), and include citations plus verification steps.
+---
+
 # Swift Accessibility Agent Skill
 
 Use this skill to enforce source-driven accessibility guidance for SwiftUI and UIKit work.
