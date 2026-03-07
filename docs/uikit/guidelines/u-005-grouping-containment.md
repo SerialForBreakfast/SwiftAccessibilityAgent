@@ -64,7 +64,7 @@ Assistive technologies navigate the accessibility tree, not the visual layout. G
 
 ## Metadata
 
-- Status: Draft
+- Status: Accepted
 - Last Reviewed: 2026-03-07
 - Last Verified: 2026-03-07
 - Platforms: iOS, iPadOS

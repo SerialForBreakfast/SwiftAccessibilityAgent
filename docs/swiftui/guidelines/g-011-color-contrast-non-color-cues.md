@@ -62,7 +62,7 @@ Accessible interfaces require redundant cues and legible contrast so information
 
 ## Metadata
 
-- Status: Draft
+- Status: Accepted
 - Last Reviewed: 2026-03-07
 - Last Verified: 2026-03-07
 - Platforms: iOS, iPadOS

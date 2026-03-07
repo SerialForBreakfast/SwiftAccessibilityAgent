@@ -63,7 +63,7 @@ Modal UI changes interaction scope. Assistive technology users need deterministi
 
 ## Metadata
 
-- Status: Draft
+- Status: Accepted
 - Last Reviewed: 2026-03-07
 - Last Verified: 2026-03-07
 - Platforms: iOS, iPadOS

@@ -63,7 +63,7 @@ Text scaling is a core accessibility behavior on iOS. Layout resilience is requi
 
 ## Metadata
 
-- Status: Draft
+- Status: Accepted
 - Last Reviewed: 2026-03-07
 - Last Verified: 2026-03-07
 - Platforms: iOS, iPadOS

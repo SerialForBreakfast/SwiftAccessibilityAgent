@@ -64,7 +64,7 @@ VoiceOver and switch-based navigation rely on deterministic traversal order. Pre
 
 ## Metadata
 
-- Status: Draft
+- Status: Accepted
 - Last Reviewed: 2026-03-07
 - Last Verified: 2026-03-07
 - Platforms: iOS, iPadOS

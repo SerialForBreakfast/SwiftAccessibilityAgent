@@ -65,7 +65,7 @@ Voice-driven and focus-driven navigation depend on labels as the primary semanti
 
 ## Metadata
 
-- Status: Draft
+- Status: Accepted
 - Last Reviewed: 2026-03-07
 - Last Verified: 2026-03-07
 - Platforms: iOS, iPadOS

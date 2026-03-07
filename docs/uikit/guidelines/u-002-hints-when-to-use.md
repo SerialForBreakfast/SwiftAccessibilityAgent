@@ -63,7 +63,7 @@ Efficient screen reader navigation depends on concise output. Hints should clari
 
 ## Metadata
 
-- Status: Draft
+- Status: Accepted
 - Last Reviewed: 2026-03-07
 - Last Verified: 2026-03-07
 - Platforms: iOS, iPadOS

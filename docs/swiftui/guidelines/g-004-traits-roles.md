@@ -64,7 +64,7 @@ Roles and traits define how assistive technologies classify elements, which affe
 
 ## Metadata
 
-- Status: Draft
+- Status: Accepted
 - Last Reviewed: 2026-03-07
 - Last Verified: 2026-03-07
 - Platforms: iOS, iPadOS

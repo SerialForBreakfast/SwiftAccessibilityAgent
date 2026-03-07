@@ -62,7 +62,7 @@ Custom actions provide a predictable interaction surface for VoiceOver and switc
 
 ## Metadata
 
-- Status: Draft
+- Status: Accepted
 - Last Reviewed: 2026-03-07
 - Last Verified: 2026-03-07
 - Platforms: iOS, iPadOS

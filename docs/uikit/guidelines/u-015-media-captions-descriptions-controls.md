@@ -64,7 +64,7 @@ Media accessibility requires both perceivable alternatives and operable controls
 
 ## Metadata
 
-- Status: Draft
+- Status: Accepted
 - Last Reviewed: 2026-03-07
 - Last Verified: 2026-03-07
 - Platforms: iOS, iPadOS

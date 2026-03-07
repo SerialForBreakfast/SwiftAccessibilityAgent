@@ -63,7 +63,7 @@ Custom actions provide a predictable command surface for VoiceOver and switch-ba
 
 ## Metadata
 
-- Status: Draft
+- Status: Accepted
 - Last Reviewed: 2026-03-07
 - Last Verified: 2026-03-07
 - Platforms: iOS, iPadOS

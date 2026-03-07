@@ -62,7 +62,7 @@ Assistive technologies depend on semantics, not visuals. Semantic equivalence pr
 
 ## Metadata
 
-- Status: Draft
+- Status: Accepted
 - Last Reviewed: 2026-03-07
 - Last Verified: 2026-03-07
 - Platforms: iOS, iPadOS

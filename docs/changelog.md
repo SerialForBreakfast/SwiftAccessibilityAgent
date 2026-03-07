@@ -37,3 +37,5 @@ All notable changes to this documentation project are tracked here.
 - Expanded `SKILL.md` canonical inputs to reference explicit testing artifact files.
 - Added actionable stale-source downgrade workflow to `docs/core/sources/registry.md`.
 - Marked core workstreams A/B/C as complete in `Tasks.txt` after artifact and consistency verification scans.
+- Added `acceptance_status` and `review_evidence` tracking columns to SwiftUI and UIKit topic backlogs using tier-based positive evidence language, and marked topics as `Tier-Validated`.
+- Promoted all SwiftUI and UIKit guidelines to `Status: Accepted` and aligned backlog `status`/`acceptance_status` entries to `Accepted`.

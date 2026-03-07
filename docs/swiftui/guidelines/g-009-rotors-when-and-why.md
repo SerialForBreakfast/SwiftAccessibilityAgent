@@ -63,7 +63,7 @@ Rotor navigation is a core VoiceOver efficiency mechanism. Proper structure impr
 
 ## Metadata
 
-- Status: Draft
+- Status: Accepted
 - Last Reviewed: 2026-03-07
 - Last Verified: 2026-03-07
 - Platforms: iOS, iPadOS

@@ -64,7 +64,7 @@ VoiceOver and switch-based interaction rely on deterministic traversal order.
 
 ## Metadata
 
-- Status: Draft
+- Status: Accepted
 - Last Reviewed: 2026-03-07
 - Last Verified: 2026-03-07
 - Platforms: iOS, iPadOS

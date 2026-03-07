@@ -65,7 +65,7 @@ VoiceOver and Voice Control depend on labels as primary semantic names. Clear la
 
 ## Metadata
 
-- Status: Draft
+- Status: Accepted
 - Last Reviewed: 2026-03-07
 - Last Verified: 2026-03-07
 - Platforms: iOS, iPadOS
