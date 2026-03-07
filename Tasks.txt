@@ -199,22 +199,22 @@ E) Verification Plan (Make Guidelines Enforceable)
 --------------------------------------------------
 Owner: `@agent`
 Priority: `P0`
-Status: `Not Started`
+Status: `In Progress`
 Target Date: `2026-03-22`
 Outputs:
 - `docs/testing/manual-test-scripts.md`
 - `docs/testing/inspector-audit-checklist.md`
 - `docs/testing/xcuitest-hooks.md`
 
-[ ] Research: define realistic manual and tooling checks for a documentation-first repo.
-[ ] Write: manual testing scripts:
+[x] Research: define realistic manual and tooling checks for a documentation-first repo.
+[x] Write: manual testing scripts:
     - VoiceOver smoke test per screen
     - Larger Text / Dynamic Type sweeps
     - Contrast / differentiate-without-color sweeps
     - Reduce Motion sweeps
-[ ] Write: tool-driven checks:
+[x] Write: tool-driven checks:
     - Accessibility Inspector audit checklist (issues to look for)
-[ ] Write: automation hooks (where feasible):
+[x] Write: automation hooks (where feasible):
     - XCUITest expectations for accessibility identifiers/labels/order (limited but useful)
 [ ] Verify: test scripts are executable by another reviewer without additional context.
 
@@ -227,18 +227,18 @@ F) Agent Skill Packaging
 ------------------------
 Owner: `@agent`
 Priority: `P1`
-Status: `Not Started`
+Status: `In Progress`
 Target Date: `2026-03-24`
 Outputs:
 - `SKILL.md`
 - Optional compact checklist (path TBD)
 
-[ ] Research: map documentation outputs into agent skill consumption format.
-[ ] Write: finalize output format strategy:
+[x] Research: map documentation outputs into agent skill consumption format.
+[x] Write: finalize output format strategy:
     - `SKILL.md` style knowledge base for AI tools
     - `docs/` pages for humans (same rules, richer narrative)
     - Optional compact checklist for prompt insertion
-[ ] Write: create "Agent rules" section:
+[x] Write: create "Agent rules" section:
     - When modifying UI, always preserve/verify accessibility semantics
     - Require citations for any new guideline added
     - Require a verification step per change
@@ -253,17 +253,17 @@ G) Maintenance + Freshness
 --------------------------
 Owner: `@agent`
 Priority: `P1`
-Status: `Not Started`
+Status: `In Progress`
 Target Date: `2026-03-25`
 Outputs:
 - `docs/changelog.md`
 - Freshness review checklist section (in registry or standalone doc)
 
-[ ] Write: source freshness policy:
+[x] Write: source freshness policy:
     - Apple docs: review quarterly or when OS major versions ship
     - WWDC: review annually
     - Community sources: review annually and downgrade if stale
-[ ] Write: changelog section for guideline updates.
+[x] Write: changelog section for guideline updates.
 [ ] Verify: stale-source downgrade rules are documented and actionable.
 
 DoD (Workstream G)

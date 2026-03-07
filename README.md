@@ -17,7 +17,11 @@ Teams can consume one track at a time (`swiftui` or `uikit`) while still inherit
 - Semantics taxonomy: `docs/core/taxonomy/semantics-checklist.md`
 - Guideline template: `docs/core/templates/guideline-template.md`
 - SwiftUI topic backlog: `docs/swiftui/guidelines/topic-backlog.md`
+- SwiftUI guideline set: `docs/swiftui/guidelines/`
 - UIKit starter backlog: `docs/uikit/guidelines/topic-backlog.md`
+- Testing artifacts: `docs/testing/`
+- Agent package: `SKILL.md`
+- Project changelog: `docs/changelog.md`
 - Planning backlog: `Tasks.txt`
 
 ## License
