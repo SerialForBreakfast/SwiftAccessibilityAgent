@@ -1,24 +1,56 @@
 ---
 name: swift-accessibility-agent
-description: Use this skill when creating, reviewing, or updating SwiftUI/UIKit UI to apply Tier-1 Apple-backed accessibility guidance, choose the right guideline topic, preserve semantics (label/value/hint/role/actions), and include citations plus verification steps.
+description: Use this skill when creating, reviewing, or updating SwiftUI/UIKit/tvOS/macOS UI to apply Tier-1 Apple-backed accessibility guidance, choose the right guideline topic, preserve semantics (label/value/hint/role/actions), and include citations plus verification steps.
 ---
 
 # Swift Accessibility Agent Skill
 
-Use this skill to enforce source-driven accessibility guidance for SwiftUI and UIKit work.
+Use this skill to enforce source-driven accessibility guidance for SwiftUI, UIKit, tvOS, and macOS work.
 
 ## Canonical Inputs
 
+- Runtime manifests (load these first):
+  - `skill/manifests/axes.json`
+  - `skill/manifests/core.json`
+  - `skill/manifests/routes.json`
+  - `skill/manifests/platform-presets.json`
+  - `skill/manifests/task-presets.json`
+  - `skill/manifests/README.md`
 - Source registry: `docs/core/sources/registry.md`
 - Technology map: `docs/core/technology-map.md`
 - Semantics taxonomy: `docs/core/taxonomy/semantics-checklist.md`
+- Architecture principles: `docs/core/architecture/architecture-principles.md`
+- Semantics cookbook: `docs/core/cookbook/semantics-cookbook.md`
+- Known OS issues: `docs/core/known-os-issues.md`
 - Guideline template: `docs/core/templates/guideline-template.md`
+- Component contract template: `docs/core/templates/component-contract-template.md`
+- Interop boundary contract template: `docs/core/templates/interop-boundary-contract-template.md`
 - SwiftUI guidelines: `docs/swiftui/guidelines/`
 - UIKit backlog: `docs/uikit/guidelines/topic-backlog.md`
+- tvOS backlog: `docs/tvos/guidelines/topic-backlog.md`
+- macOS backlog: `docs/macos/guidelines/topic-backlog.md`
 - Testing artifacts:
   - `docs/testing/manual-test-scripts.md`
+  - `docs/testing/tvos-manual-test-scripts.md`
+  - `docs/testing/macos-manual-test-scripts.md`
   - `docs/testing/inspector-audit-checklist.md`
   - `docs/testing/xcuitest-hooks.md`
+  - `docs/testing/platform-coverage-matrix.md`
+
+## Runtime Load Protocol (Token-Efficient)
+
+1. Resolve `platform`, `framework`, and `task_type` using `skill/manifests/axes.json`.
+2. Load `skill/manifests/core.json` and apply `token_policy`.
+3. Resolve route via `skill/manifests/routes.json` (`<platform>:<framework>`).
+4. Load platform extras via `skill/manifests/platform-presets.json`.
+5. Load task extras via `skill/manifests/task-presets.json`.
+6. Load only:
+   - core always-on docs
+   - one backlog file
+   - one or two topic guideline files
+   - platform-specific testing docs
+   - required testing/template docs for the task
+7. Do not load `docs/changelog.md` during runtime guidance unless explicitly requested.
 
 ## Agent Rules
 
@@ -36,6 +68,19 @@ Use this skill to enforce source-driven accessibility guidance for SwiftUI and U
    - Role/Traits
    - Actions
 6. When interop is present (`UIHostingController`, representables, UIKit containers), include interop risk notes and on-device validation.
+7. Select rules by target platform before giving implementation advice:
+   - iOS/iPadOS: SwiftUI + UIKit track
+   - tvOS: UIKit focus-navigation and tvOS-specific interaction guidance
+   - macOS: SwiftUI + AppKit (`NSAccessibility`) guidance
+
+## Strict Rules (Adopted)
+
+1. Never ship a new interactive element without a meaningful label.
+2. For compound UI, explicitly choose grouping behavior and document rationale.
+3. For complex visuals, provide synthetic children or alternate semantic representation.
+4. Every accessibility change requires verification evidence (Inspector + VoiceOver minimum).
+5. Mixed-framework surfaces require explicit interop ownership (focus owner + semantics owner).
+6. Suspected OS bugs must be recorded with OS range, repro steps, workaround, and source link.
 
 ## Output Contract For New Guidelines
 
@@ -45,7 +90,7 @@ Every guideline must include:
 - Testable rule
 - Rationale
 - SwiftUI implementation notes
-- UIKit interop notes
+- UIKit/AppKit interop notes
 - Testing section (Inspector + VoiceOver minimum)
 - Do/Don't examples
 - Citations

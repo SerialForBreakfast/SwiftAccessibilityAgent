@@ -271,6 +271,32 @@ DoD (Workstream G)
 - Changelog format defined and initialized.
 - Review trigger conditions are stated.
 
+H) Platform Expansion (tvOS + macOS)
+------------------------------------
+Owner: `@agent`
+Priority: `P0`
+Status: `Done`
+Target Date: `2026-03-31`
+Outputs:
+- `docs/tvos/README.md`
+- `docs/tvos/guidelines/topic-backlog.md`
+- `docs/macos/README.md`
+- `docs/macos/guidelines/topic-backlog.md`
+- Updates to `docs/core/sources/registry.md`, `docs/core/technology-map.md`, `README.md`, and `SKILL.md`
+
+[x] Research: identify Tier-1 Apple sources for tvOS focus behavior and macOS/AppKit accessibility.
+[x] Write: add tvOS and macOS track scaffolding with prioritized backlog IDs.
+[x] Write: extend source registry with platform-specific Tier-1 references and automation-focused Tier-2 references.
+[x] Write: update skill packaging and top-level README to include platform selection workflow.
+[x] Verify: consistency sweep for backlog fields, citation tiers, and cross-file links.
+[x] Verify: draft first P0 guideline file in each new track (`T-001`, `M-001`).
+
+DoD (Workstream H)
+- tvOS and macOS tracks exist with backlogs and consistent metadata fields.
+- Source registry includes Tier-1 references for tvOS focus and macOS `NSAccessibility`.
+- `SKILL.md` instructs platform-aware track selection before implementation guidance.
+- First P0 guideline draft exists for both tvOS and macOS tracks.
+
 Milestones
 ==========
 M1 - Registry + Technology Map Complete
@@ -322,6 +348,19 @@ Required Outputs:
 Acceptance:
 - Skill doc structure matches Agent Skills style.
 - Agent rules included and linked to verification workflow.
+
+M6 - Platform Coverage Expansion
+Owner: `@agent`
+Target Date: `2026-03-31`
+Required Outputs:
+- `docs/tvos/guidelines/topic-backlog.md`
+- `docs/macos/guidelines/topic-backlog.md`
+- Updated `docs/core/sources/registry.md` with tvOS/macOS entries
+- Updated `SKILL.md` and `README.md` platform instructions
+Acceptance:
+- tvOS and macOS are first-class tracks with prioritized topic backlogs.
+- Core source registry includes platform-specific Tier-1 entries.
+- Agent workflow includes explicit platform-target selection.
 
 Risk Log
 ========

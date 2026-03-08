@@ -6,9 +6,47 @@ All notable changes to this documentation project are tracked here.
 
 ### Added
 
+- `docs/tvos/README.md`
+- `docs/tvos/guidelines/topic-backlog.md`
+- `docs/macos/README.md`
+- `docs/macos/guidelines/topic-backlog.md`
+- `docs/tvos/guidelines/t-001-focus-order-directional-navigation.md`
+- `docs/tvos/guidelines/t-002-initial-focus-modal-restoration.md`
+- `docs/tvos/guidelines/t-003-labels-values-traits-focused-controls.md`
+- `docs/tvos/guidelines/t-009-contrast-non-color-cues.md`
+- `docs/tvos/guidelines/t-007-media-playback-controls.md`
+- `docs/tvos/guidelines/t-008-reduce-motion-focus-animations.md`
+- `docs/tvos/guidelines/t-004-grouping-containment-shelves-grids.md`
+- `docs/tvos/guidelines/t-005-custom-actions-remote-first.md`
+- `docs/tvos/guidelines/t-006-search-filter-collection-semantics.md`
+- `docs/tvos/guidelines/t-010-xcuitest-focus-regression-hooks.md`
+- `docs/macos/guidelines/m-001-nsaccessibility-roles-labels-values-actions.md`
+- `docs/macos/guidelines/m-002-keyboard-focus-order.md`
+- `docs/macos/guidelines/m-007-modal-window-focus-containment.md`
+- `docs/macos/guidelines/m-009-contrast-reduced-transparency.md`
+- `docs/macos/guidelines/m-010-testing-workflow.md`
+- `docs/macos/guidelines/m-008-voice-control-naming-disambiguation.md`
+- `docs/macos/guidelines/m-003-grouping-hierarchy-desktop-layouts.md`
+- `docs/macos/guidelines/m-004-announcements-state-change-notifications.md`
+- `docs/macos/guidelines/m-005-swiftui-appkit-interop-forwarding.md`
+- `docs/macos/guidelines/m-006-table-outline-list-semantics.md`
 - `docs/testing/manual-test-scripts.md`
 - `docs/testing/inspector-audit-checklist.md`
 - `docs/testing/xcuitest-hooks.md`
+- `skill/manifests/README.md`
+- `skill/manifests/axes.json`
+- `skill/manifests/core.json`
+- `skill/manifests/routes.json`
+- `skill/manifests/task-presets.json`
+- `skill/manifests/platform-presets.json`
+- `docs/testing/tvos-manual-test-scripts.md`
+- `docs/testing/macos-manual-test-scripts.md`
+- `docs/testing/platform-coverage-matrix.md`
+- `docs/core/architecture/architecture-principles.md`
+- `docs/core/cookbook/semantics-cookbook.md`
+- `docs/core/known-os-issues.md`
+- `docs/core/templates/component-contract-template.md`
+- `docs/core/templates/interop-boundary-contract-template.md`
 - `SKILL.md` agent packaging document.
 - UIKit P0 guideline drafts:
   - `docs/uikit/guidelines/u-001-labels-meaningful-names.md`
@@ -30,6 +68,19 @@ All notable changes to this documentation project are tracked here.
 
 ### Changed
 
+- Expanded top-level track coverage in `README.md` to include tvOS and macOS backlogs.
+- Expanded `SKILL.md` to include tvOS/macOS canonical inputs and explicit platform-target selection rules.
+- Extended `docs/core/sources/registry.md` with Tier-1 tvOS/macOS sources (`Accessibility for UIKit`, tvOS focus interactions, `NSAccessibility`, WWDC25 macOS accessibility) and Tier-2 automation reference (`AccessibilitySnapshot`).
+- Expanded `docs/core/technology-map.md` with tvOS focus-engine and macOS keyboard/AppKit risk sections.
+- Added Workstream `H` and Milestone `M6` for platform expansion in `Tasks.txt`.
+- Updated tvOS and macOS backlogs to mark `T-001` and `M-001` as drafted with Tier-1 citation evidence.
+- Updated tvOS and macOS backlogs to mark `T-002` and `M-002` as drafted with Tier-1 citation evidence.
+- Updated tvOS and macOS backlogs to mark `T-003` and `M-007` as drafted with Tier-1 citation evidence.
+- Updated tvOS and macOS backlogs to mark `T-009` and `M-009` as drafted with Tier-1 citation evidence.
+- Updated tvOS and macOS backlogs to mark `T-007` and `M-010` as drafted with Tier-1 citation evidence.
+- Updated tvOS and macOS backlogs to mark `T-008` and `M-008` as drafted with Tier-1 citation evidence.
+- Updated tvOS and macOS backlogs to mark `T-004`, `T-005`, `T-006`, `T-010`, `M-003`, `M-004`, `M-005`, and `M-006` as drafted with citation evidence.
+- Updated tvOS and macOS track README files to reflect complete drafted sets (`T-001`..`T-010`, `M-001`..`M-010`).
 - Corrected SwiftUI backlog guideline paths and core reference links in `docs/swiftui/guidelines/topic-backlog.md`.
 - Updated UIKit backlog statuses and file links for drafted P0 topics in `docs/uikit/guidelines/topic-backlog.md`.
 - Completed structured guideline QA pass across SwiftUI and UIKit sets (sections, metadata, citation counts, and source-ID integrity).
@@ -41,3 +92,11 @@ All notable changes to this documentation project are tracked here.
 - Promoted all SwiftUI and UIKit guidelines to `Status: Accepted` and aligned backlog `status`/`acceptance_status` entries to `Accepted`.
 - Updated top-level and track README files to reflect accepted guideline baseline and tier-based backlog evidence fields.
 - Added skills.sh install command and publish-readiness checklist to `README.md`.
+- Added runtime manifest layer under `skill/manifests/` to support low-token platform/framework/task-based document loading.
+- Updated `SKILL.md` with a manifest-first runtime load protocol and explicit token policy behavior.
+- Updated `README.md` AI-agent workflow to resolve runtime manifests before loading long-form docs.
+- Added platform-specific runtime presets so agents load tvOS/macOS-specific test scripts automatically.
+- Expanded `SKILL.md` and `README.md` to include platform coverage matrix and platform-specific test artifacts.
+- Added architecture-principles layer, component/interop contract templates, semantics cookbook, and OS issue tracker scaffold.
+- Extended source registry with additional Tier-1 API/session anchors and Tier-2 code-heavy references from the architecture guide.
+- Added strict-mode agent rules aligned to architecture-guide recommendations.

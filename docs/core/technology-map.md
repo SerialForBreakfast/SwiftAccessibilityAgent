@@ -1,7 +1,7 @@
-# Accessibility Technology Map (SwiftUI + Interop)
+# Accessibility Technology Map (SwiftUI/UIKit/tvOS/macOS)
 
 Last updated: 2026-03-07
-Scope: iOS SwiftUI apps, including SwiftUI-UIKit interoperability where it affects accessibility semantics.
+Scope: Apple platform apps (iOS, iPadOS, tvOS, macOS), including SwiftUI/UIKit/AppKit interoperability where it affects accessibility semantics.
 
 ## Purpose
 
@@ -25,6 +25,33 @@ Define what each assistive technology needs from app semantics, and how teams ve
   - Accessibility Inspector hierarchy inspection.
   - On-device VoiceOver walkthrough per screen.
   - Verify rotor landmarks/headings where applicable.
+
+### Focus Engine (tvOS)
+
+- What users do:
+  - Navigate with remote directional focus movement.
+  - Activate focused controls and move between focus groups.
+- UI must expose:
+  - Predictable directional focus transitions.
+  - Correct preferred initial focus in each screen/modal context.
+  - Focusable controls with complete semantics (label/value/traits/actions).
+- Test coverage:
+  - Device/simulator walkthrough with remote-style navigation.
+  - Verify no dead-end focus states and no trapped focus loops.
+  - Confirm modal entry/exit returns focus to a logical anchor.
+
+### Keyboard Navigation (macOS + iPad keyboard users)
+
+- What users do:
+  - Move through controls using Tab/Shift-Tab and directional keys.
+  - Activate controls without touch.
+- UI must expose:
+  - Logical key navigation order matching visual hierarchy.
+  - Visible focus indicators and reachable primary actions.
+  - Command targets with clear names.
+- Test coverage:
+  - Full keyboard-access pass through critical flows.
+  - Verify no unreachable or duplicate focus stops.
 
 ### Switch Control
 
@@ -116,3 +143,11 @@ For all technologies above, each interactive UI element should be validated for:
 - UIKit parent containers can override or flatten SwiftUI accessibility elements.
 
 Verification rule: whenever interop is introduced, run both hierarchy inspection and on-device VoiceOver flow before merge.
+
+## AppKit Interop Risk Areas (macOS)
+
+- SwiftUI views bridged into AppKit containers can lose expected role/subrole semantics if wrappers are incomplete.
+- Custom `NSView` implementations may omit `NSAccessibility` roles, labels, and state notifications.
+- Window/dialog transitions can leave assistive focus at stale anchors without explicit focus management.
+
+Verification rule: when AppKit interop is introduced, run Accessibility Inspector hierarchy checks plus keyboard and VoiceOver walkthroughs on macOS before merge.

@@ -27,10 +27,10 @@ Why this rule matters for assistive technology behavior and usability.
 - Primary modifiers/APIs to use.
 - Preferred control semantics over custom views when possible.
 
-### UIKit Interop Notes
+### UIKit/AppKit Interop Notes
 
-- Equivalent UIKit properties/APIs.
-- Any `UIHostingController` / representable caveats.
+- Equivalent UIKit/AppKit properties/APIs.
+- Any `UIHostingController` / representable / `NSHostingView` caveats.
 
 ## How To Test
 

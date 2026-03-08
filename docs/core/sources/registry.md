@@ -27,6 +27,9 @@ Each source entry must include:
 |---|---|---|---|---|---|---|
 | APPLE-SWIFTUI-ACCESSIBILITY | SwiftUI: Accessibility | https://developer.apple.com/documentation/swiftui/accessibility | Tier-1 | 2026-03-07 | SwiftUI accessibility APIs and modifiers | Primary SwiftUI accessibility API reference hub. |
 | APPLE-VIEW-ACCESSIBILITY | Accessibility Modifiers (View Accessibility) | https://developer.apple.com/documentation/swiftui/view-accessibility | Tier-1 | 2026-03-07 | Modifier-level behavior for SwiftUI view semantics | Use for labels, values, hints, traits, actions, grouping, and sort priority guidance. |
+| APPLE-ACCESSIBILITY-ELEMENT-CHILDREN | accessibilityElement(children:) | https://developer.apple.com/documentation/swiftui/view/accessibilityelement%28children%3A%29 | Tier-1 | 2026-03-07 | SwiftUI grouping behavior (`combine`/`contain`/`ignore`) | Primary source for compound element grouping strategy. |
+| APPLE-ACCESSIBILITY-CHILDREN | accessibilityChildren(children:) | https://developer.apple.com/documentation/swiftui/view/accessibilitychildren%28children%3A%29 | Tier-1 | 2026-03-07 | Synthetic accessibility child elements for complex visuals | Use for chart/canvas and custom visual semantic decomposition. |
+| APPLE-ACCESSIBILITY-REPRESENTATION | accessibilityRepresentation(representation:) | https://developer.apple.com/documentation/swiftui/view/accessibilityrepresentation%28representation%3A%29 | Tier-1 | 2026-03-07 | Alternate semantic representations for non-standard UI | Use when visual UI needs a dedicated accessible representation. |
 | APPLE-CREATING-ACCESSIBLE-VIEWS | Enhancing the Accessibility of Your SwiftUI App | https://developer.apple.com/documentation/accessibility/enhancing-the-accessibility-of-your-swiftui-app | Tier-1 | 2026-03-07 | End-to-end SwiftUI accessibility implementation guidance | Canonical Apple implementation walkthrough. |
 | APPLE-HIG-ACCESSIBILITY | Apple Human Interface Guidelines: Accessibility | https://developer.apple.com/design/human-interface-guidelines/accessibility | Tier-1 | 2026-03-07 | Product-level accessibility behavior expectations | Use for rationale and UX expectations. |
 | APPLE-AX-HUB | Accessibility Documentation Hub | https://developer.apple.com/documentation/accessibility | Tier-1 | 2026-03-07 | Assistive technologies, testing resources, and broad guidance | Canonical docs hub URL (developer.apple.com/accessibility redirects here). |
@@ -34,8 +37,13 @@ Each source entry must include:
 | APPLE-AX-TESTING | Performing Accessibility Testing for Your App | https://developer.apple.com/documentation/accessibility/performing-accessibility-testing-for-your-app | Tier-1 | 2026-03-07 | Manual and tool-assisted accessibility testing guidance | Use to define verification workflows. |
 | APPLE-WWDC-AX-INDEX | WWDC Accessibility and Inclusion Sessions | https://developer.apple.com/videos/accessibility-inclusion/ | Tier-1 | 2026-03-07 | Session-driven updates and platform changes | Use as discovery index; cite specific sessions for rules. |
 | APPLE-WWDC24-SWIFTUI | Catch Up on Accessibility in SwiftUI (WWDC24) | https://developer.apple.com/videos/play/wwdc2024/10073/ | Tier-1 | 2026-03-07 | SwiftUI semantics, modifiers, and interaction updates | High-value session for modern SwiftUI guidance. |
+| APPLE-WWDC21-SWIFTUI-BEYOND | SwiftUI Accessibility: Beyond the Basics (WWDC21) | https://developer.apple.com/videos/play/wwdc2021/10119/ | Tier-1 | 2026-03-07 | Advanced SwiftUI grouping, representation, and interaction patterns | Use for deeper SwiftUI semantics and complex control coverage. |
 | APPLE-WWDC23-SWIFTUI-UIKIT | Build Accessible Apps with SwiftUI and UIKit (WWDC23) | https://developer.apple.com/videos/play/wwdc2023/10036/ | Tier-1 | 2026-03-07 | Interop guidance for mixed SwiftUI/UIKit apps | Anchor interop-focused guidelines. |
 | APPLE-WWDC23-AUDITS | Perform Accessibility Audits for Your App (WWDC23) | https://developer.apple.com/videos/play/wwdc2023/10035/ | Tier-1 | 2026-03-07 | Practical auditing approach and tooling | Anchor Inspector/test-plan guidance. |
+| APPLE-UIKIT-ACCESSIBILITY | Accessibility for UIKit | https://developer.apple.com/documentation/uikit/accessibility-for-uikit | Tier-1 | 2026-03-07 | UIKit accessibility API guidance for iOS/tvOS | Primary UIKit accessibility hub for view/control semantics and behavior. |
+| APPLE-TVOS-FOCUS | About Focus Interactions for Apple TV | https://developer.apple.com/documentation/uikit/about-focus-interactions-for-apple-tv | Tier-1 | 2026-03-07 | tvOS focus engine behavior and navigation expectations | Primary source for focus-first navigation guidance in tvOS tracks. |
+| APPLE-MACOS-NSACCESSIBILITY | NSAccessibility | https://developer.apple.com/documentation/appkit/nsaccessibility-swift.struct | Tier-1 | 2026-03-07 | AppKit accessibility protocol and role/value/action contracts | Primary AppKit source for macOS semantic exposure and notifications. |
+| APPLE-WWDC25-MAC-ACCESSIBILITY | Make your Mac app more accessible to everyone (WWDC25) | https://developer.apple.com/videos/play/wwdc2025/229/ | Tier-1 | 2026-03-07 | macOS-specific patterns and modern platform recommendations | Use to shape macOS track guidance and migration notes. |
 | ASC-ANL-OVERVIEW | App Store Connect: Overview of Accessibility Nutrition Labels | https://developer.apple.com/help/app-store-connect/manage-app-accessibility/overview-of-accessibility-nutrition-labels/ | Tier-1 | 2026-03-07 | Label feature definitions and policy framing | Use for feature-scope definitions and app-store reporting context. |
 | ASC-ANL-MANAGE | App Store Connect: Manage Accessibility Nutrition Labels | https://developer.apple.com/help/app-store-connect/manage-app-accessibility/manage-accessibility-nutrition-labels/ | Tier-1 | 2026-03-07 | Operational guidance for declaring accessibility support | Use for process and maintenance checks. |
 
@@ -48,6 +56,9 @@ Each source entry must include:
 | MAJID-A11Y | Swift with Majid: Accessibility Topics | https://swiftwithmajid.com | Tier-2 | 2026-03-07 | Advanced SwiftUI patterns (e.g., representations/rotors) | Pin exact posts in topic-specific docs. |
 | USEYOURLOAF-A11Y | Use Your Loaf: Accessibility Updates | https://useyourloaf.com | Tier-2 | 2026-03-07 | API changes and migration notes | Confirm recency before relying on old modifiers. |
 | CVS-SWIFTUI-A11Y-TECHNIQUES | CVS Health iOS SwiftUI Accessibility Techniques | https://github.com/cvs-health/ios-swiftui-accessibility-techniques | Tier-2 | 2026-03-07 | Open-source technique examples | Cross-reference each adopted pattern to Tier-1. |
+| CVS-COMBINING-FOCUS | CVS Health: Combining Focus Example | https://github.com/cvs-health/ios-swiftui-accessibility-techniques/blob/main/iOSswiftUIa11yTechniques/Documentation/CombiningFocus.md | Tier-2 | 2026-03-07 | Concrete grouping/focus example for compound elements | Use as implementation reference; keep Tier-1 grouping docs as authority. |
+| SWIFTLEE-SWIFTUI-UIKIT-A11Y | SwiftLee: Accessibility in SwiftUI for UIKit Developers | https://www.avanderlee.com/swiftui/accessibility-uikit-developers/ | Tier-2 | 2026-03-07 | Interop-oriented SwiftUI/UIKit implementation patterns | Practical examples; validate rule claims against Tier-1 Apple sources. |
+| CASHAPP-ACCESSIBILITYSNAPSHOT | AccessibilitySnapshot (Cash App) | https://github.com/cashapp/AccessibilitySnapshot | Tier-2 | 2026-03-07 | Snapshot-style accessibility regression testing techniques | Use for optional automation patterns; validate assertions against Tier-1 behavior expectations. |
 
 ## Tier-3 Sources (Seed)
 
@@ -65,7 +76,7 @@ Each source entry must include:
 
 ## Freshness Policy
 
-- Apple docs: review quarterly and at each major iOS release.
+- Apple docs: review quarterly and at each major OS release (iOS, tvOS, macOS).
 - WWDC sources: review annually after WWDC season.
 - Community sources: review annually and downgrade if stale.
 
