@@ -44,6 +44,7 @@ All notable changes to this documentation project are tracked here.
 - `docs/testing/platform-coverage-matrix.md`
 - `docs/testing/regression-triage-playbook.md`
 - `docs/core/architecture/architecture-principles.md`
+- `docs/core/decision-matrix.md`
 - `docs/core/cookbook/semantics-cookbook.md`
 - `docs/core/known-os-issues.md`
 - `docs/core/known-os-issues-index.json`
@@ -54,6 +55,7 @@ All notable changes to this documentation project are tracked here.
 - `docs/visionos/README.md`
 - `docs/visionos/guidelines/topic-backlog.md`
 - `skill/manifests/select-example.json`
+- `skill/manifests/decision-rules.json`
 - UIKit P0 guideline drafts:
   - `docs/uikit/guidelines/u-001-labels-meaningful-names.md`
   - `docs/uikit/guidelines/u-002-hints-when-to-use.md`
@@ -115,3 +117,5 @@ All notable changes to this documentation project are tracked here.
 - Tightened task presets so `code_review` and `test_plan` require the platform coverage matrix.
 - Added known-issues maintenance workflow doc with add/verify/retire criteria.
 - Added explicit `Interop Ownership` sections to key tvOS/macOS focus/modal/media/table-list guidelines.
+- Added alternatives decision matrix and machine-readable decision rules so agents can choose between valid implementations deterministically.
+- Updated skill runtime/task presets to require decision matrix usage in review/guideline/architecture tasks.

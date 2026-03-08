@@ -16,11 +16,13 @@ Use this skill to enforce source-driven accessibility guidance for SwiftUI, UIKi
   - `skill/manifests/platform-presets.json`
   - `skill/manifests/task-presets.json`
   - `skill/manifests/select-example.json`
+  - `skill/manifests/decision-rules.json`
   - `skill/manifests/README.md`
 - Source registry: `docs/core/sources/registry.md`
 - Technology map: `docs/core/technology-map.md`
 - Semantics taxonomy: `docs/core/taxonomy/semantics-checklist.md`
 - Architecture principles: `docs/core/architecture/architecture-principles.md`
+- Alternatives decision matrix: `docs/core/decision-matrix.md`
 - Semantics cookbook: `docs/core/cookbook/semantics-cookbook.md`
 - Known OS issues: `docs/core/known-os-issues.md`
 - Known OS issues index: `docs/core/known-os-issues-index.json`
@@ -86,6 +88,14 @@ Use this skill to enforce source-driven accessibility guidance for SwiftUI, UIKi
 4. Every accessibility change requires verification evidence (Inspector + VoiceOver minimum).
 5. Mixed-framework surfaces require explicit interop ownership (focus owner + semantics owner).
 6. Suspected OS bugs must be recorded with OS range, repro steps, workaround, and source link.
+
+## Alternative Selection Requirement
+
+For UI changes with multiple viable implementations:
+
+1. Use `docs/core/decision-matrix.md` (or `skill/manifests/decision-rules.json`) to choose an alternative.
+2. Document selected option and why alternatives were not chosen.
+3. Run the verification set required by the selected matrix row.
 
 ## Output Contract For New Guidelines
 

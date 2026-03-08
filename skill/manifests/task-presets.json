@@ -13,6 +13,7 @@
     "code_review": {
       "required": [
         "docs/core/architecture/architecture-principles.md",
+        "docs/core/decision-matrix.md",
         "docs/testing/platform-coverage-matrix.md",
         "docs/testing/inspector-audit-checklist.md",
         "docs/testing/xcuitest-hooks.md"
@@ -25,6 +26,7 @@
     "new_guideline": {
       "required": [
         "docs/core/architecture/architecture-principles.md",
+        "docs/core/decision-matrix.md",
         "docs/core/templates/guideline-template.md",
         "docs/core/templates/component-contract-template.md",
         "docs/core/templates/interop-boundary-contract-template.md",
@@ -61,6 +63,7 @@
     "architecture_design": {
       "required": [
         "docs/core/architecture/architecture-principles.md",
+        "docs/core/decision-matrix.md",
         "docs/core/templates/component-contract-template.md",
         "docs/core/templates/interop-boundary-contract-template.md",
         "docs/core/known-os-issues.md"

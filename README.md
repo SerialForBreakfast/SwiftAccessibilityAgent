@@ -85,6 +85,7 @@ Before sharing broadly:
 - Technology map: `docs/core/technology-map.md`
 - Semantics taxonomy: `docs/core/taxonomy/semantics-checklist.md`
 - Architecture principles: `docs/core/architecture/architecture-principles.md`
+- Alternatives decision matrix: `docs/core/decision-matrix.md`
 - Semantics cookbook: `docs/core/cookbook/semantics-cookbook.md`
 - Known OS issues log: `docs/core/known-os-issues.md`
 - Guideline template: `docs/core/templates/guideline-template.md`

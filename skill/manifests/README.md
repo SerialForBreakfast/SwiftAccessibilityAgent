@@ -9,6 +9,7 @@ Purpose: let agents resolve a minimal doc set before loading long-form guidance.
 - `task-presets.json`: task-specific extra docs to load.
 - `platform-presets.json`: platform-specific test docs to load.
 - `select-example.json`: concrete selection-to-load examples.
+- `decision-rules.json`: machine-readable alternative-selection rules.
 - `core.json`: always-on baseline docs and strict load order.
 
 ## Resolution Steps
