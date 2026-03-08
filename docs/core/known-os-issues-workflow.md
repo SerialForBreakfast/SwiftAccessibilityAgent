@@ -19,6 +19,12 @@ Create a new entry when all are true:
 - Platform/OS range
 - Affected framework(s)
 - Symptom class
+- Version status fields:
+  - `introduced_in`
+  - `affected_range`
+  - `fixed_in`
+  - `status`
+  - `evidence_confidence`
 - Detection signals
 - Repro steps (if known)
 - Mitigation/workaround status
@@ -36,6 +42,7 @@ Create a new entry when all are true:
 - Mark workaround as `confirmed` only after local repro + re-test.
 - If workaround is anecdotal, mark as `candidate`.
 - Never promote a workaround to guideline truth without Tier-1 corroboration.
+- If `fixed_in` is claimed, include release-note or equivalent primary evidence in source IDs.
 
 ## Retirement Rules
 

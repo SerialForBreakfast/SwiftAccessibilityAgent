@@ -26,10 +26,12 @@ Use this skill to enforce source-driven accessibility guidance for SwiftUI, UIKi
 - Semantics taxonomy: `docs/core/taxonomy/semantics-checklist.md`
 - Architecture principles: `docs/core/architecture/architecture-principles.md`
 - Alternatives decision matrix: `docs/core/decision-matrix.md`
+- External landscape references: `docs/core/external-landscape.md`
 - Semantics cookbook: `docs/core/cookbook/semantics-cookbook.md`
 - Known OS issues: `docs/core/known-os-issues.md`
 - Known OS issues index: `docs/core/known-os-issues-index.json`
 - Known OS issues workflow: `docs/core/known-os-issues-workflow.md`
+- Accessibility version matrix: `docs/core/version-matrix.md`
 - Guideline template: `docs/core/templates/guideline-template.md`
 - Component contract template: `docs/core/templates/component-contract-template.md`
 - Interop boundary contract template: `docs/core/templates/interop-boundary-contract-template.md`

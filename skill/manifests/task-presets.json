@@ -52,6 +52,7 @@
     "regression_triage": {
       "required": [
         "docs/core/known-os-issues.md",
+        "docs/core/version-matrix.md",
         "docs/testing/regression-triage-playbook.md",
         "docs/testing/xcuitest-hooks.md",
         "docs/testing/inspector-audit-checklist.md"
@@ -64,6 +65,7 @@
       "required": [
         "docs/core/architecture/architecture-principles.md",
         "docs/core/decision-matrix.md",
+        "docs/core/external-landscape.md",
         "docs/core/templates/component-contract-template.md",
         "docs/core/templates/interop-boundary-contract-template.md",
         "docs/core/known-os-issues.md"

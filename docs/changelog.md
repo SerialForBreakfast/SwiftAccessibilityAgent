@@ -46,10 +46,12 @@ All notable changes to this documentation project are tracked here.
 - `AGENT.md`
 - `docs/core/architecture/architecture-principles.md`
 - `docs/core/decision-matrix.md`
+- `docs/core/external-landscape.md`
 - `docs/core/cookbook/semantics-cookbook.md`
 - `docs/core/known-os-issues.md`
 - `docs/core/known-os-issues-index.json`
 - `docs/core/known-os-issues-workflow.md`
+- `docs/core/version-matrix.md`
 - `docs/core/templates/component-contract-template.md`
 - `docs/core/templates/interop-boundary-contract-template.md`
 - `SKILL.md` agent packaging document.
@@ -124,3 +126,9 @@ All notable changes to this documentation project are tracked here.
 - Added repository-level secure prompting policy (`AGENT.md`) with explicit prohibition on arbitrary code execution.
 - Added machine-readable security manifest and wired it into always-load runtime documents.
 - Updated `SKILL.md` and `README.md` to require security-policy-first loading in agent workflows.
+- Added curated external accessibility landscape document covering lauded projects, strong voices, and conference/transcript resources.
+- Extended source registry with landscape source IDs (Apple Design Awards pages, AppleVis Hall of Fame, and conference-resource links).
+- Updated architecture task preset to load external landscape references for discovery and pattern selection.
+- Expanded known-issues catalog with explicit version status fields (`introduced_in`, `affected_range`, `fixed_in`, `status`, `evidence_confidence`).
+- Added accessibility version matrix to centralize per-issue OS-range status and confidence.
+- Updated triage/runtime docs so regression triage loads both known-issues catalog and version matrix.
