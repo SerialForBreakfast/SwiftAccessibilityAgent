@@ -2,6 +2,8 @@
   "version": "1.0.0",
   "last_updated": "2026-03-07",
   "always_load": [
+    "AGENT.md",
+    "skill/manifests/security-policy.json",
     "docs/core/sources/registry.md",
     "docs/core/technology-map.md",
     "docs/core/taxonomy/semantics-checklist.md"

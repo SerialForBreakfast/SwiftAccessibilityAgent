@@ -80,6 +80,7 @@ Before sharing broadly:
 
 ## Core Documents
 
+- Agent security policy: `AGENT.md`
 - Runtime manifests: `skill/manifests/`
 - Source registry: `docs/core/sources/registry.md`
 - Technology map: `docs/core/technology-map.md`
@@ -114,11 +115,12 @@ For each UI change:
 
 If an agent is editing UI:
 
-1. Load `SKILL.md`.
-2. Load `skill/manifests/` and resolve `platform + framework + task_type`.
-3. Load only the resolved core docs + backlog + minimal topic files + platform-specific test scripts.
-4. Require Tier-1-backed citations for any new guidance.
-5. Preserve guideline metadata and evidence fields.
+1. Load `AGENT.md` first (security policy; no arbitrary code execution).
+2. Load `SKILL.md`.
+3. Load `skill/manifests/` and resolve `platform + framework + task_type`.
+4. Load only the resolved core docs + backlog + minimal topic files + platform-specific test scripts.
+5. Require Tier-1-backed citations for any new guidance.
+6. Preserve guideline metadata and evidence fields.
 
 ## Conventions
 

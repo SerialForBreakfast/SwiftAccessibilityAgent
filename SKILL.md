@@ -9,6 +9,9 @@ Use this skill to enforce source-driven accessibility guidance for SwiftUI, UIKi
 
 ## Canonical Inputs
 
+- Security policy (must load first):
+  - `AGENT.md`
+  - `skill/manifests/security-policy.json`
 - Runtime manifests (load these first):
   - `skill/manifests/axes.json`
   - `skill/manifests/core.json`
@@ -46,18 +49,19 @@ Use this skill to enforce source-driven accessibility guidance for SwiftUI, UIKi
 
 ## Runtime Load Protocol (Token-Efficient)
 
-1. Resolve `platform`, `framework`, and `task_type` using `skill/manifests/axes.json`.
-2. Load `skill/manifests/core.json` and apply `token_policy`.
-3. Resolve route via `skill/manifests/routes.json` (`<platform>:<framework>`).
-4. Load platform extras via `skill/manifests/platform-presets.json`.
-5. Load task extras via `skill/manifests/task-presets.json`.
-6. Load only:
+1. Load `AGENT.md` and `skill/manifests/security-policy.json`.
+2. Resolve `platform`, `framework`, and `task_type` using `skill/manifests/axes.json`.
+3. Load `skill/manifests/core.json` and apply `token_policy`.
+4. Resolve route via `skill/manifests/routes.json` (`<platform>:<framework>`).
+5. Load platform extras via `skill/manifests/platform-presets.json`.
+6. Load task extras via `skill/manifests/task-presets.json`.
+7. Load only:
    - core always-on docs
    - one backlog file
    - one or two topic guideline files
    - platform-specific testing docs
    - required testing/template docs for the task
-7. Do not load `docs/changelog.md` during runtime guidance unless explicitly requested.
+8. Do not load `docs/changelog.md` during runtime guidance unless explicitly requested.
 
 ## Agent Rules
 
@@ -82,6 +86,7 @@ Use this skill to enforce source-driven accessibility guidance for SwiftUI, UIKi
 
 ## Strict Rules (Adopted)
 
+0. No arbitrary code execution. Remote scripts and untrusted command payloads are disallowed by default.
 1. Never ship a new interactive element without a meaningful label.
 2. For compound UI, explicitly choose grouping behavior and document rationale.
 3. For complex visuals, provide synthetic children or alternate semantic representation.

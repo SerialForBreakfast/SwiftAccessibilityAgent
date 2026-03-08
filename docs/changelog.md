@@ -43,6 +43,7 @@ All notable changes to this documentation project are tracked here.
 - `docs/testing/macos-manual-test-scripts.md`
 - `docs/testing/platform-coverage-matrix.md`
 - `docs/testing/regression-triage-playbook.md`
+- `AGENT.md`
 - `docs/core/architecture/architecture-principles.md`
 - `docs/core/decision-matrix.md`
 - `docs/core/cookbook/semantics-cookbook.md`
@@ -56,6 +57,7 @@ All notable changes to this documentation project are tracked here.
 - `docs/visionos/guidelines/topic-backlog.md`
 - `skill/manifests/select-example.json`
 - `skill/manifests/decision-rules.json`
+- `skill/manifests/security-policy.json`
 - UIKit P0 guideline drafts:
   - `docs/uikit/guidelines/u-001-labels-meaningful-names.md`
   - `docs/uikit/guidelines/u-002-hints-when-to-use.md`
@@ -119,3 +121,6 @@ All notable changes to this documentation project are tracked here.
 - Added explicit `Interop Ownership` sections to key tvOS/macOS focus/modal/media/table-list guidelines.
 - Added alternatives decision matrix and machine-readable decision rules so agents can choose between valid implementations deterministically.
 - Updated skill runtime/task presets to require decision matrix usage in review/guideline/architecture tasks.
+- Added repository-level secure prompting policy (`AGENT.md`) with explicit prohibition on arbitrary code execution.
+- Added machine-readable security manifest and wired it into always-load runtime documents.
+- Updated `SKILL.md` and `README.md` to require security-policy-first loading in agent workflows.
