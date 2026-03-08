@@ -136,3 +136,4 @@ All notable changes to this documentation project are tracked here.
 - Updated triage/runtime docs so regression triage loads both known-issues catalog and version matrix.
 - Added accessibility pattern review rubric to classify implementations as good/risky/bad with category-based scoring and auto-fail conditions.
 - Added machine-readable pattern signal definitions and integrated them into runtime task presets and skill requirements.
+- Rewrote `README.md` for public-facing use by removing internal development-status/task-progress sections and keeping user-focused usage guidance.
