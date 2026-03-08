@@ -20,6 +20,24 @@ It provides:
 
 ## Install As a Skill
 
+Unified install (recommended):
+
+```bash
+npx skills add https://github.com/SerialForBreakfast/SwiftAccessibilityAgent --skill swift-accessibility-agent
+```
+
+Verify installation:
+
+```bash
+npx skills list
+```
+
+If your active session does not discover the skill immediately, refresh or restart the session.
+
+### Optional: Provider-Specific Scope Control (Troubleshooting)
+
+Use these only if you need deterministic install scope in Codex:
+
 Project-local Codex install:
 
 ```bash
@@ -32,7 +50,7 @@ Global Codex install:
 npx skills add https://github.com/SerialForBreakfast/SwiftAccessibilityAgent --skill swift-accessibility-agent --agent codex --global --yes
 ```
 
-### Verify Installation
+Verify local/global path placement:
 
 ```bash
 find .agents/skills ~/.codex/skills -maxdepth 2 -name SKILL.md 2>/dev/null | grep swift-accessibility-agent
