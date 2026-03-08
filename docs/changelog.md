@@ -47,6 +47,7 @@ All notable changes to this documentation project are tracked here.
 - `docs/core/architecture/architecture-principles.md`
 - `docs/core/decision-matrix.md`
 - `docs/core/external-landscape.md`
+- `docs/core/pattern-review-rubric.md`
 - `docs/core/cookbook/semantics-cookbook.md`
 - `docs/core/known-os-issues.md`
 - `docs/core/known-os-issues-index.json`
@@ -60,6 +61,7 @@ All notable changes to this documentation project are tracked here.
 - `skill/manifests/select-example.json`
 - `skill/manifests/decision-rules.json`
 - `skill/manifests/security-policy.json`
+- `skill/manifests/pattern-signals.json`
 - UIKit P0 guideline drafts:
   - `docs/uikit/guidelines/u-001-labels-meaningful-names.md`
   - `docs/uikit/guidelines/u-002-hints-when-to-use.md`
@@ -132,3 +134,5 @@ All notable changes to this documentation project are tracked here.
 - Expanded known-issues catalog with explicit version status fields (`introduced_in`, `affected_range`, `fixed_in`, `status`, `evidence_confidence`).
 - Added accessibility version matrix to centralize per-issue OS-range status and confidence.
 - Updated triage/runtime docs so regression triage loads both known-issues catalog and version matrix.
+- Added accessibility pattern review rubric to classify implementations as good/risky/bad with category-based scoring and auto-fail conditions.
+- Added machine-readable pattern signal definitions and integrated them into runtime task presets and skill requirements.

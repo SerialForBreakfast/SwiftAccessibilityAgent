@@ -11,6 +11,7 @@ Purpose: let agents resolve a minimal doc set before loading long-form guidance.
 - `select-example.json`: concrete selection-to-load examples.
 - `decision-rules.json`: machine-readable alternative-selection rules.
 - `security-policy.json`: machine-readable execution and prompting guardrails.
+- `pattern-signals.json`: machine-readable good/risky/bad pattern classification signals.
 - `core.json`: always-on baseline docs and strict load order.
 
 ## Resolution Steps

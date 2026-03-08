@@ -4,6 +4,7 @@
   "task_presets": {
     "ui_change": {
       "required": [
+        "docs/core/pattern-review-rubric.md",
         "docs/core/templates/guideline-template.md"
       ],
       "optional": [
@@ -13,6 +14,7 @@
     "code_review": {
       "required": [
         "docs/core/architecture/architecture-principles.md",
+        "docs/core/pattern-review-rubric.md",
         "docs/core/decision-matrix.md",
         "docs/testing/platform-coverage-matrix.md",
         "docs/testing/inspector-audit-checklist.md",
@@ -53,6 +55,7 @@
       "required": [
         "docs/core/known-os-issues.md",
         "docs/core/version-matrix.md",
+        "docs/core/pattern-review-rubric.md",
         "docs/testing/regression-triage-playbook.md",
         "docs/testing/xcuitest-hooks.md",
         "docs/testing/inspector-audit-checklist.md"

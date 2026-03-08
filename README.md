@@ -87,6 +87,7 @@ Before sharing broadly:
 - Semantics taxonomy: `docs/core/taxonomy/semantics-checklist.md`
 - Architecture principles: `docs/core/architecture/architecture-principles.md`
 - Alternatives decision matrix: `docs/core/decision-matrix.md`
+- Pattern review rubric: `docs/core/pattern-review-rubric.md`
 - External landscape references: `docs/core/external-landscape.md`
 - Semantics cookbook: `docs/core/cookbook/semantics-cookbook.md`
 - Known OS issues log: `docs/core/known-os-issues.md`

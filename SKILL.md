@@ -20,12 +20,14 @@ Use this skill to enforce source-driven accessibility guidance for SwiftUI, UIKi
   - `skill/manifests/task-presets.json`
   - `skill/manifests/select-example.json`
   - `skill/manifests/decision-rules.json`
+  - `skill/manifests/pattern-signals.json`
   - `skill/manifests/README.md`
 - Source registry: `docs/core/sources/registry.md`
 - Technology map: `docs/core/technology-map.md`
 - Semantics taxonomy: `docs/core/taxonomy/semantics-checklist.md`
 - Architecture principles: `docs/core/architecture/architecture-principles.md`
 - Alternatives decision matrix: `docs/core/decision-matrix.md`
+- Pattern review rubric: `docs/core/pattern-review-rubric.md`
 - External landscape references: `docs/core/external-landscape.md`
 - Semantics cookbook: `docs/core/cookbook/semantics-cookbook.md`
 - Known OS issues: `docs/core/known-os-issues.md`
@@ -103,6 +105,14 @@ For UI changes with multiple viable implementations:
 1. Use `docs/core/decision-matrix.md` (or `skill/manifests/decision-rules.json`) to choose an alternative.
 2. Document selected option and why alternatives were not chosen.
 3. Run the verification set required by the selected matrix row.
+
+## Pattern Classification Requirement
+
+For reviews and code generation:
+
+1. Classify changed patterns using `docs/core/pattern-review-rubric.md`.
+2. Use `skill/manifests/pattern-signals.json` to tag findings as `good`, `risky`, or `bad`.
+3. Trigger auto-fail if any configured auto-fail condition is present.
 
 ## Output Contract For New Guidelines
 
