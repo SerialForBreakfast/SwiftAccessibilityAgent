@@ -20,20 +20,34 @@ It provides:
 
 ## Install As a Skill
 
+Project-local Codex install:
+
 ```bash
-npx skills add https://github.com/SerialForBreakfast/SwiftAccessibilityAgent --skill swift-accessibility-agent
+npx skills add https://github.com/SerialForBreakfast/SwiftAccessibilityAgent --skill swift-accessibility-agent --agent codex --yes
+```
+
+Global Codex install:
+
+```bash
+npx skills add https://github.com/SerialForBreakfast/SwiftAccessibilityAgent --skill swift-accessibility-agent --agent codex --global --yes
 ```
 
 ### Verify Installation
 
 ```bash
-find ~/.codex/skills -maxdepth 2 -name SKILL.md | grep swift-accessibility-agent
+find .agents/skills ~/.codex/skills -maxdepth 2 -name SKILL.md 2>/dev/null | grep swift-accessibility-agent
 ```
 
-Expected installed path:
+Expected installed path (global):
 
 ```text
 ~/.codex/skills/swift-accessibility-agent/SKILL.md
+```
+
+Expected installed path (project-local):
+
+```text
+./.agents/skills/swift-accessibility-agent/SKILL.md
 ```
 
 If the skill does not appear in the active session skill list, refresh or restart the Codex session.
@@ -74,8 +88,9 @@ If the skill does not appear in the active session skill list, refresh or restar
 
 1. Load `AGENT.md` first.
 2. Load `SKILL.md`.
-3. Resolve runtime selection through `references/manifests/` (`platform`, `framework`, `task_type`).
-4. Load only resolved docs and required verification artifacts.
+3. Choose task workflow from `SKILL.md` first (review, improve, implement).
+4. Resolve runtime selection through `references/manifests/` (`platform`, `framework`, `task_type`) only as needed.
+5. Load only resolved docs and required verification artifacts.
 
 ## Validation Checklist
 

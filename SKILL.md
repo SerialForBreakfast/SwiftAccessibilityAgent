@@ -11,7 +11,32 @@ description: Use this skill when reviewing or updating SwiftUI, UIKit, tvOS, mac
 - Accessibility-aware implementation updates.
 - Platform/framework-specific guidance selection.
 
-## First Load
+## Task Workflows
+
+### Review Existing Accessibility Implementation
+
+1. Identify the changed UI surface and platform/framework.
+2. Load one backlog file for that surface.
+3. Load one or two matching guideline files.
+4. Output findings with guideline IDs, citation IDs, and verification steps.
+
+### Improve Existing UI Accessibility
+
+1. Load the matching backlog and current guideline file(s).
+2. Propose concrete semantic fixes (label/value/hint/role/actions).
+3. Include rationale tied to Tier-1 citations.
+4. Provide verification plan (Inspector + manual flow; optional XCUITest hook).
+
+### Implement New Accessible UI
+
+1. Select guideline topics before implementation.
+2. Prefer native controls and explicit semantics.
+3. Include interop ownership notes for mixed stacks.
+4. Return implementation plus verification expectations.
+
+## Internal Routing (As Needed)
+
+Load these only when task scope is ambiguous or multi-platform:
 
 1. `references/manifests/security-policy.json`
 2. `references/manifests/axes.json`

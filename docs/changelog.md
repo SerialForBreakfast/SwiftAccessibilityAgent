@@ -108,6 +108,8 @@ All notable changes to this documentation project are tracked here.
 - Added skills.sh install command and publish-readiness checklist to `README.md`.
 - Added `agents/openai.yaml`, created a skill-facing `references/` tree, and simplified `SKILL.md` for progressive-loading runtime behavior.
 - Updated README with install verification steps, expected install path, session refresh guidance, and a validation checklist.
+- Clarified local vs global Codex install commands in README and added dual-scope install verification.
+- Updated `SKILL.md` to lead with task-first workflows (review, improve, implement) before internal manifest routing details.
 - Added runtime manifest layer under `skill/manifests/` to support low-token platform/framework/task-based document loading.
 - Updated `SKILL.md` with a manifest-first runtime load protocol and explicit token policy behavior.
 - Updated `README.md` AI-agent workflow to resolve runtime manifests before loading long-form docs.
