@@ -30,6 +30,12 @@ tvOS relies on focus continuity for navigation. Modal transitions that break con
 - In SwiftUI-hosted tvOS screens, verify focus anchors survive UIKit presentation/dismissal boundaries.
 - Ensure representable wrappers do not reset focus to container roots after dismissal.
 
+## Interop Ownership
+
+- Host modal controller owns initial focus and restore-focus anchor lifecycle.
+- Embedded content subtree owns element-level semantics and state announcements.
+- Dismissal path owner must guarantee focus restoration for success and cancel paths.
+
 ## How To Test
 
 ### Accessibility Inspector

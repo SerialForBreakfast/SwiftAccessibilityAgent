@@ -30,6 +30,12 @@ Desktop applications often rely on dense data views. Accessibility semantics in 
 - Verify custom cell content preserves accessible labels/actions.
 - Ensure hosted SwiftUI row content does not remove structural context from AppKit containers.
 
+## Interop Ownership
+
+- Host table/outline container owns row hierarchy, selection model, and focus transitions.
+- Embedded row/cell views own per-item labels, values, and action semantics.
+- Boundary owner must verify structure remains exposed after row virtualization/reuse updates.
+
 ## How To Test
 
 ### Accessibility Inspector

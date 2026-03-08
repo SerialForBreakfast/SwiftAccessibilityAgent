@@ -31,6 +31,12 @@ macOS accessibility depends heavily on keyboard operability. Incomplete or disor
 - Validate that SwiftUI/AppKit boundaries preserve keyboard reachability and focus context.
 - Ensure state transitions do not drop focus onto non-interactive containers.
 
+## Interop Ownership
+
+- Host container owns traversal entry order and cross-pane focus transitions.
+- Embedded subtree owns control semantics and keyboard-operable action exposure.
+- Boundary owner must ensure focus is not dropped onto non-interactive wrappers.
+
 ## How To Test
 
 ### Accessibility Inspector

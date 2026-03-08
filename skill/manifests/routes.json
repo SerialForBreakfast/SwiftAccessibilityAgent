@@ -47,6 +47,12 @@
       "guideline_root": "docs/macos/guidelines/",
       "fallback_roots": ["docs/uikit/guidelines/"],
       "notes": ["Use for Mac Catalyst-style UIKit guidance only."]
+    },
+    "visionos:swiftui": {
+      "backlog": "docs/visionos/guidelines/topic-backlog.md",
+      "guideline_root": "docs/visionos/guidelines/",
+      "fallback_roots": ["docs/swiftui/guidelines/"],
+      "notes": ["visionOS track is scaffolded; rely on SwiftUI fallback guidance until V-series guidelines are drafted."]
     }
   }
 }

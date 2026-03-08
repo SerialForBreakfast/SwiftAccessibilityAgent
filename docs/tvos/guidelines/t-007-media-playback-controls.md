@@ -30,6 +30,12 @@ Media is a primary tvOS use case. Accessibility failures in playback controls bl
 - Validate semantic forwarding for custom player overlays hosted across SwiftUI/UIKit boundaries.
 - Ensure overlay presentation/dismissal does not hide required controls from focus.
 
+## Interop Ownership
+
+- Host playback surface owns focus entry and overlay lifecycle behavior.
+- Embedded player controls own transport/action semantics and state values.
+- Host and embedded layers must agree on one source of truth for playback state announcements.
+
 ## How To Test
 
 ### Accessibility Inspector

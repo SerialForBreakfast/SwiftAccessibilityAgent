@@ -15,6 +15,7 @@ Use this skill to enforce source-driven accessibility guidance for SwiftUI, UIKi
   - `skill/manifests/routes.json`
   - `skill/manifests/platform-presets.json`
   - `skill/manifests/task-presets.json`
+  - `skill/manifests/select-example.json`
   - `skill/manifests/README.md`
 - Source registry: `docs/core/sources/registry.md`
 - Technology map: `docs/core/technology-map.md`
@@ -22,6 +23,8 @@ Use this skill to enforce source-driven accessibility guidance for SwiftUI, UIKi
 - Architecture principles: `docs/core/architecture/architecture-principles.md`
 - Semantics cookbook: `docs/core/cookbook/semantics-cookbook.md`
 - Known OS issues: `docs/core/known-os-issues.md`
+- Known OS issues index: `docs/core/known-os-issues-index.json`
+- Known OS issues workflow: `docs/core/known-os-issues-workflow.md`
 - Guideline template: `docs/core/templates/guideline-template.md`
 - Component contract template: `docs/core/templates/component-contract-template.md`
 - Interop boundary contract template: `docs/core/templates/interop-boundary-contract-template.md`
@@ -29,12 +32,14 @@ Use this skill to enforce source-driven accessibility guidance for SwiftUI, UIKi
 - UIKit backlog: `docs/uikit/guidelines/topic-backlog.md`
 - tvOS backlog: `docs/tvos/guidelines/topic-backlog.md`
 - macOS backlog: `docs/macos/guidelines/topic-backlog.md`
+- visionOS backlog: `docs/visionos/guidelines/topic-backlog.md`
 - Testing artifacts:
   - `docs/testing/manual-test-scripts.md`
   - `docs/testing/tvos-manual-test-scripts.md`
   - `docs/testing/macos-manual-test-scripts.md`
   - `docs/testing/inspector-audit-checklist.md`
   - `docs/testing/xcuitest-hooks.md`
+  - `docs/testing/regression-triage-playbook.md`
   - `docs/testing/platform-coverage-matrix.md`
 
 ## Runtime Load Protocol (Token-Efficient)

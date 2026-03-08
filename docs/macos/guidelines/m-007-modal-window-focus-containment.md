@@ -31,6 +31,12 @@ macOS accessibility workflows rely on stable focus context across window and mod
 - For SwiftUI-AppKit hosting boundaries, confirm focus restoration is not lost at container transitions.
 - Ensure state announcements after dismissal reflect the newly active context.
 
+## Interop Ownership
+
+- Modal/window host owns focus containment boundaries and restore anchor.
+- Embedded content owns element semantics and contextual state announcements.
+- Dismissal owner must verify both completion and cancel paths return focus correctly.
+
 ## How To Test
 
 ### Accessibility Inspector

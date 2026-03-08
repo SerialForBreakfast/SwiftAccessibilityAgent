@@ -71,6 +71,8 @@ Before sharing broadly:
   - tvOS backlog and upcoming guideline set for focus-first navigation and VoiceOver.
 - `docs/macos/`
   - macOS backlog and upcoming guideline set for SwiftUI/AppKit accessibility.
+- `docs/visionos/`
+  - visionOS backlog scaffold for spatial accessibility guidance.
 - `docs/testing/`
   - Verification planning artifacts (manual scripts, inspector checklist, XCUITest hooks).
 - `SKILL.md`
@@ -89,10 +91,12 @@ Before sharing broadly:
 - Component contract template: `docs/core/templates/component-contract-template.md`
 - Interop boundary contract template: `docs/core/templates/interop-boundary-contract-template.md`
 - Platform coverage matrix: `docs/testing/platform-coverage-matrix.md`
+- Regression triage playbook: `docs/testing/regression-triage-playbook.md`
 - SwiftUI backlog: `docs/swiftui/guidelines/topic-backlog.md`
 - UIKit backlog: `docs/uikit/guidelines/topic-backlog.md`
 - tvOS backlog: `docs/tvos/guidelines/topic-backlog.md`
 - macOS backlog: `docs/macos/guidelines/topic-backlog.md`
+- visionOS backlog: `docs/visionos/guidelines/topic-backlog.md`
 - Changelog: `docs/changelog.md`
 
 ## Recommended Workflow

@@ -8,6 +8,7 @@ Purpose: let agents resolve a minimal doc set before loading long-form guidance.
 - `routes.json`: platform+framework route to default guideline/backlog paths.
 - `task-presets.json`: task-specific extra docs to load.
 - `platform-presets.json`: platform-specific test docs to load.
+- `select-example.json`: concrete selection-to-load examples.
 - `core.json`: always-on baseline docs and strict load order.
 
 ## Resolution Steps

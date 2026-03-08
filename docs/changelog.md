@@ -42,12 +42,18 @@ All notable changes to this documentation project are tracked here.
 - `docs/testing/tvos-manual-test-scripts.md`
 - `docs/testing/macos-manual-test-scripts.md`
 - `docs/testing/platform-coverage-matrix.md`
+- `docs/testing/regression-triage-playbook.md`
 - `docs/core/architecture/architecture-principles.md`
 - `docs/core/cookbook/semantics-cookbook.md`
 - `docs/core/known-os-issues.md`
+- `docs/core/known-os-issues-index.json`
+- `docs/core/known-os-issues-workflow.md`
 - `docs/core/templates/component-contract-template.md`
 - `docs/core/templates/interop-boundary-contract-template.md`
 - `SKILL.md` agent packaging document.
+- `docs/visionos/README.md`
+- `docs/visionos/guidelines/topic-backlog.md`
+- `skill/manifests/select-example.json`
 - UIKit P0 guideline drafts:
   - `docs/uikit/guidelines/u-001-labels-meaningful-names.md`
   - `docs/uikit/guidelines/u-002-hints-when-to-use.md`
@@ -100,3 +106,12 @@ All notable changes to this documentation project are tracked here.
 - Added architecture-principles layer, component/interop contract templates, semantics cookbook, and OS issue tracker scaffold.
 - Extended source registry with additional Tier-1 API/session anchors and Tier-2 code-heavy references from the architecture guide.
 - Added strict-mode agent rules aligned to architecture-guide recommendations.
+- Replaced `docs/core/known-os-issues.md` placeholder with a structured regression catalog including symptom classes, detection signals, mitigations, and source-backed entries.
+- Expanded source registry with Apple forum threads, release-note anchors, and community trend links used for regression tracking context.
+- Updated runtime task presets so `regression_triage` requires the known-issues catalog and regression triage playbook.
+- Added visionOS track scaffolding (`README` + backlog) and manifest route/axis support.
+- Added machine-readable known-issues index for low-token symptom-to-bug lookup.
+- Added manifest selection examples (`skill/manifests/select-example.json`) for common runtime resolution scenarios.
+- Tightened task presets so `code_review` and `test_plan` require the platform coverage matrix.
+- Added known-issues maintenance workflow doc with add/verify/retire criteria.
+- Added explicit `Interop Ownership` sections to key tvOS/macOS focus/modal/media/table-list guidelines.

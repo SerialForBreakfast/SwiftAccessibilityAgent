@@ -30,6 +30,12 @@ tvOS interaction is focus-first. Users depend on directional movement reliabilit
 - In SwiftUI-on-tvos flows, verify hosted UIKit containers do not override or reset expected focus anchors.
 - For representables, ensure child UIKit views participate correctly in tvOS focus evaluation.
 
+## Interop Ownership
+
+- Host container owns screen-entry and screen-exit focus targets.
+- Embedded subtree owns element labels/values/traits/actions.
+- Modal presenter owns restoration to prior focus anchor after dismiss.
+
 ## How To Test
 
 ### Accessibility Inspector
