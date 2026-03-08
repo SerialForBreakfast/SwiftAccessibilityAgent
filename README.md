@@ -20,55 +20,37 @@ It provides:
 
 ## Install As a Skill
 
-Unified install (recommended):
-
-```bash
-npx skills add https://github.com/SerialForBreakfast/SwiftAccessibilityAgent --skill swift-accessibility-agent
-```
-
-Verify installation:
-
-```bash
-npx skills list
-```
-
-If your active session does not discover the skill immediately, refresh or restart the session.
-
-### Optional: Provider-Specific Scope Control (Troubleshooting)
-
-Use these only if you need deterministic install scope in Codex:
-
-Project-local Codex install:
+Project-local install (default):
 
 ```bash
 npx skills add https://github.com/SerialForBreakfast/SwiftAccessibilityAgent --skill swift-accessibility-agent --agent codex --yes
 ```
 
-Global Codex install:
-
-```bash
-npx skills add https://github.com/SerialForBreakfast/SwiftAccessibilityAgent --skill swift-accessibility-agent --agent codex --global --yes
-```
-
-Verify local/global path placement:
+Verify installation:
 
 ```bash
 find .agents/skills ~/.codex/skills -maxdepth 2 -name SKILL.md 2>/dev/null | grep swift-accessibility-agent
 ```
 
-Expected installed path (global):
-
-```text
-~/.codex/skills/swift-accessibility-agent/SKILL.md
-```
-
-Expected installed path (project-local):
+Expected default installed path:
 
 ```text
 ./.agents/skills/swift-accessibility-agent/SKILL.md
 ```
 
-If the skill does not appear in the active session skill list, refresh or restart the Codex session.
+If your active session does not discover the skill immediately, refresh or restart the session.
+
+### Optional: Global Install Alternative
+
+```bash
+npx skills add https://github.com/SerialForBreakfast/SwiftAccessibilityAgent --skill swift-accessibility-agent --agent codex --global --yes
+```
+
+Expected global installed path:
+
+```text
+~/.codex/skills/swift-accessibility-agent/SKILL.md
+```
 
 ## Quick Start
 
@@ -88,7 +70,6 @@ If the skill does not appear in the active session skill list, refresh or restar
 
 ## Core Documents
 
-- Security policy: `AGENT.md`
 - Agent operating contract: `SKILL.md`
 - UI metadata: `agents/openai.yaml`
 - Runtime manifests: `references/manifests/`
@@ -104,11 +85,10 @@ If the skill does not appear in the active session skill list, refresh or restar
 
 ## Using With AI Agents
 
-1. Load `AGENT.md` first.
-2. Load `SKILL.md`.
-3. Choose task workflow from `SKILL.md` first (review, improve, implement).
-4. Resolve runtime selection through `references/manifests/` (`platform`, `framework`, `task_type`) only as needed.
-5. Load only resolved docs and required verification artifacts.
+1. Load `SKILL.md`.
+2. Choose task workflow first (review, improve, implement).
+3. Resolve runtime selection through `references/manifests/` (`platform`, `framework`, `task_type`) only as needed.
+4. Load only resolved docs and required verification artifacts.
 
 ## Validation Checklist
 
