@@ -24,21 +24,33 @@ It provides:
 npx skills add https://github.com/SerialForBreakfast/SwiftAccessibilityAgent --skill swift-accessibility-agent
 ```
 
-Then load `SKILL.md` in your agent workflow.
+### Verify Installation
+
+```bash
+find ~/.codex/skills -maxdepth 2 -name SKILL.md | grep swift-accessibility-agent
+```
+
+Expected installed path:
+
+```text
+~/.codex/skills/swift-accessibility-agent/SKILL.md
+```
+
+If the skill does not appear in the active session skill list, refresh or restart the Codex session.
 
 ## Quick Start
 
 1. Pick a platform/framework track:
-- `docs/swiftui/`
-- `docs/uikit/`
-- `docs/tvos/`
-- `docs/macos/`
-- `docs/visionos/`
+- `references/swiftui/`
+- `references/uikit/`
+- `references/tvos/`
+- `references/macos/`
+- `references/visionos/`
 
 2. Load shared core guidance:
-- `docs/core/sources/registry.md`
-- `docs/core/technology-map.md`
-- `docs/core/taxonomy/semantics-checklist.md`
+- `references/core/sources/registry.md`
+- `references/core/technology-map.md`
+- `references/core/taxonomy/semantics-checklist.md`
 
 3. Apply guideline + testing artifacts relevant to your change.
 
@@ -46,23 +58,32 @@ Then load `SKILL.md` in your agent workflow.
 
 - Security policy: `AGENT.md`
 - Agent operating contract: `SKILL.md`
-- Runtime manifests: `skill/manifests/`
-- Source registry: `docs/core/sources/registry.md`
-- Architecture principles: `docs/core/architecture/architecture-principles.md`
-- Decision matrix: `docs/core/decision-matrix.md`
-- Pattern review rubric: `docs/core/pattern-review-rubric.md`
-- External landscape references: `docs/core/external-landscape.md`
-- Semantics cookbook: `docs/core/cookbook/semantics-cookbook.md`
-- Known issues catalog: `docs/core/known-os-issues.md`
-- Version matrix: `docs/core/version-matrix.md`
-- Testing artifacts: `docs/testing/`
+- UI metadata: `agents/openai.yaml`
+- Runtime manifests: `references/manifests/`
+- Source registry: `references/core/sources/registry.md`
+- Architecture principles: `references/core/architecture/architecture-principles.md`
+- Decision matrix: `references/core/decision-matrix.md`
+- Pattern review rubric: `references/core/pattern-review-rubric.md`
+- External landscape references: `references/core/external-landscape.md`
+- Semantics cookbook: `references/core/cookbook/semantics-cookbook.md`
+- Known issues catalog: `references/core/known-os-issues.md`
+- Version matrix: `references/core/version-matrix.md`
+- Testing artifacts: `references/testing/`
 
 ## Using With AI Agents
 
 1. Load `AGENT.md` first.
 2. Load `SKILL.md`.
-3. Resolve runtime selection through `skill/manifests/` (`platform`, `framework`, `task_type`).
+3. Resolve runtime selection through `references/manifests/` (`platform`, `framework`, `task_type`).
 4. Load only resolved docs and required verification artifacts.
+
+## Validation Checklist
+
+- `SKILL.md` exists at installed skill root.
+- `agents/openai.yaml` exists.
+- Manifest and reference paths in `SKILL.md` resolve.
+- Skill appears in session available skills list.
+- Skill triggers by name: `swift-accessibility-agent`.
 
 ## Source Governance
 

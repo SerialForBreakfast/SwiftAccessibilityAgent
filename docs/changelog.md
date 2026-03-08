@@ -106,6 +106,8 @@ All notable changes to this documentation project are tracked here.
 - Promoted all SwiftUI and UIKit guidelines to `Status: Accepted` and aligned backlog `status`/`acceptance_status` entries to `Accepted`.
 - Updated top-level and track README files to reflect accepted guideline baseline and tier-based backlog evidence fields.
 - Added skills.sh install command and publish-readiness checklist to `README.md`.
+- Added `agents/openai.yaml`, created a skill-facing `references/` tree, and simplified `SKILL.md` for progressive-loading runtime behavior.
+- Updated README with install verification steps, expected install path, session refresh guidance, and a validation checklist.
 - Added runtime manifest layer under `skill/manifests/` to support low-token platform/framework/task-based document loading.
 - Updated `SKILL.md` with a manifest-first runtime load protocol and explicit token policy behavior.
 - Updated `README.md` AI-agent workflow to resolve runtime manifests before loading long-form docs.
