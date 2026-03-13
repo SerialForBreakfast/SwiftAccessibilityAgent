@@ -138,6 +138,8 @@ All notable changes to this documentation project are tracked here.
 - Updated architecture task preset to load external landscape references for discovery and pattern selection.
 - Expanded known-issues catalog with explicit version status fields (`introduced_in`, `affected_range`, `fixed_in`, `status`, `evidence_confidence`).
 - Added accessibility version matrix to centralize per-issue OS-range status and confidence.
+- Expanded rotor guidance to cover container strategy, contextual action exposure, and the rule that rotor/custom actions accelerate navigation without becoming the only path for core tasks.
+- Updated architecture principles, decision matrix, pattern review rubric, and technology map to treat rotor support as an architectural concern for dense surfaces and mixed-framework containers.
 - Updated triage/runtime docs so regression triage loads both known-issues catalog and version matrix.
 - Added accessibility pattern review rubric to classify implementations as good/risky/bad with category-based scoring and auto-fail conditions.
 - Added machine-readable pattern signal definitions and integrated them into runtime task presets and skill requirements.

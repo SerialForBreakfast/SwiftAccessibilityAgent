@@ -1,11 +1,11 @@
 # Accessibility Architecture Principles (Pattern-Agnostic)
 
-Last updated: 2026-03-07
+Last updated: 2026-03-12
 Scope: SwiftUI/UIKit/AppKit codebases across iOS, iPadOS, tvOS, and macOS.
 
 ## Principle 1: Accessibility Is Component API
 
-Rule: treat accessibility semantics (label/value/hint/traits/actions/grouping/order) as part of each reusable component contract.
+Rule: treat accessibility semantics (label/value/hint/traits/actions/grouping/order/landmarks) as part of each reusable component contract.
 
 Implementation target:
 - Design system components
@@ -28,7 +28,25 @@ Ownership split:
 - Host layer owns screen-level focus transitions and modal lifecycle focus.
 - Embedded subtree owns element-level semantics and grouping.
 
-## Principle 4: Guidelines Must Be Testable
+## Principle 4: Acceleration Must Not Be Exclusive
+
+Rule: rotor landmarks and custom actions should accelerate navigation and overflow tasks, but primary task completion must remain possible through direct, linear navigation.
+
+Expected outcome:
+- Users with low rotor familiarity can still complete core flows.
+- Users with high rotor fluency gain faster navigation and contextual action access.
+- Design decisions do not hide safety-critical or primary actions behind rotor-only affordances.
+
+## Principle 5: Dense Surfaces Need a Navigation Strategy
+
+Rule: data-dense screens, repeated sections, and complex rows must define section landmarks, grouping strategy, and action-exposure model at the container level.
+
+Implementation target:
+- Lists, feeds, dashboards, forms, collection layouts
+- Compound rows/cards with secondary actions
+- Mixed-framework host containers
+
+## Principle 6: Guidelines Must Be Testable
 
 Rule: no guideline is complete without verification steps.
 
@@ -43,4 +61,5 @@ Minimum verification:
 A component or screen change is accessibility-ready only when:
 - Semantic contract is documented.
 - Interop ownership is documented when frameworks are mixed.
+- Dense surfaces document landmark/grouping/action strategy when applicable.
 - Verification evidence is attached to the change.
